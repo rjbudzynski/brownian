@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #422518;
+    width: 99vw;
+    height: 95vh;
+    font-family: 'Courier New', Courier, monospace;
+    color: antiquewhite;
+    display: flex;
+}
+
+#canvas-container {
+    background: transparent;
+    width: 75%;
+    height: 100%;
+}
+
+h1 {
+    position: fixed;
+    top: 0;
+    text-align: center;
+    font-size: larger;
+}
+
+#info {
+    text-align: right;
+    border-left: 1px dotted;
+    width: 25%;
+}
+
+#plotlyFig {
+    width: 100%;
+    margin: 1ex;
+}
+
+#info button {
+    /* position: fixed;
+    top: 3rem;
+    right: 3vw; */
+    background: darkslategray;
+    color: inherit;
+    padding: 5px;
+}
+
+#counter {
+    /* text-align: right; */
+}
+
+#distance {
+    /* text-align: right; */
+}
+
+footer {
+    position: fixed;
+    right: 3vw;
+    bottom: 3vh;
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit;
+}
