@@ -11,13 +11,14 @@ body {
 
 #canvas-container {
     background: transparent;
-    width: 75%;
+    width: 66%;
     height: 100%;
 }
 
 h1 {
     position: fixed;
     top: 0;
+    left: 1rem;
     text-align: center;
     font-size: larger;
 }
@@ -25,11 +26,12 @@ h1 {
 #info {
     text-align: right;
     border-left: 1px dotted;
-    width: 25%;
+    width: 34%;
 }
 
 #plotlyFig {
     width: 100%;
+    height: 75%;
     margin: 1ex;
 }
 

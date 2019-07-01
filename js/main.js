@@ -17,6 +17,6 @@ document.querySelector('#toggle').addEventListener('click', () => {
 document.querySelector('#reset').addEventListener('click', () => {
     brownGas.running = false;
     brownGas.init();
+    brownPlot.reset();
     brownGas.update();
-    brownPlot.update();
 });
