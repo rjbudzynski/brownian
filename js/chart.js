@@ -24,7 +24,7 @@ const brownPlot = {
         xaxis: {
             range: [0, 120],
             autorange: true,
-            rangemode: 'tozero',
+            rangemode: 'nonnegative',
             // tick0: 0,
             // dtick: 50,
         },
@@ -37,12 +37,14 @@ const brownPlot = {
             showticklabels: false,
         },
         xaxis2: {
+            rangemode: 'nonnegative',
             showgrid: false,
             title: {
                 text: 'time steps',
             },
         },
         yaxis2: {
+            rangemode: 'nonnegative',
             showgrid: false,
             title: {
                 text: 'avg distance',
@@ -59,7 +61,7 @@ const brownPlot = {
                 color: 'magenta'
             },
             name: 'distance distribution',
-            xbins: { size: .5 },
+            // xbins: { size: .5 },
         };
     },
     _line: {

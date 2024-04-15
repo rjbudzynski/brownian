@@ -9,8 +9,8 @@ window.addEventListener('load', () => {
     brownGas.init();
     brownGas.paint();
     brownPlot.init();
-    brownGas.update();
-    brownPlot.update();
+    // brownGas.update();
+    // brownPlot.update();
 
 
     document.querySelector('#toggle').addEventListener('click', () => {
