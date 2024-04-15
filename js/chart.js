@@ -59,6 +59,7 @@ const brownPlot = {
                 color: 'magenta'
             },
             name: 'distance distribution',
+            xbins: { size: .5 },
         };
     },
     _line: {

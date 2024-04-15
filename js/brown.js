@@ -83,6 +83,10 @@ class BrownGas {
         return this.distances.reduce((a, b) => a + b) / this.nParticles;
     }
 
+    get maxDistance() {
+        return this.distances.reduce((a, b) => Math.max(a, b))
+    }
+
     paint() {
         this.canvas.clear();
         this.particles.forEach((p) => {
@@ -102,6 +106,7 @@ class BrownGas {
         this.paint();
         document.querySelector('#count').innerText = this.count;
         document.querySelector('#spread').innerText = this.avgDistance.toPrecision(3);
+        document.querySelector('#maximum').innerText = this.maxDistance.toPrecision(3);
         this.count % 10 == 1 && brownPlot.update();
     }
 
